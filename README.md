@@ -4,7 +4,7 @@ Author: Tomasz Potanski, tomasz@potanski.pl
 
 Management panel for sales web app.
 
-[See a demo!](WinkFolder/demo.mp4)
+[See a demo!](http://potanski.pl/demo-sales-app.mp4)
 
 Start
 -----
