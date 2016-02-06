@@ -1,0 +1,25 @@
+<div
+  class="pie chart-wrapper"
+>
+
+  <div
+    class="chart"
+  >
+    <div
+      class="hamburger chart-btn pie-btn"
+      data-ng-click="chartCtrl.toggleMenu( $event )"
+    ></div>
+
+    <div data-chartmenu
+         obj="chartCtrl.menuData"
+         isvisible="chartCtrl.isMenuVisible"
+    ></div>
+
+    <highchart
+      id="salesmandata"
+      class="hight-chart-drctv"
+      config="chartConfig">
+    </highchart>
+  </div>
+
+</div>

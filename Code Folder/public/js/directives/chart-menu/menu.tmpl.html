@@ -1,0 +1,15 @@
+<div class="hamburger-menu"
+     data-ng-show="isvisible">
+  <ul>
+    <li data-ng-click="menuCtrl.refresh()">Refresh</li>
+
+    <li data-ng-click="menuCtrl.remove()"
+        data-ng-show="menuCtrl.closevisibleinner"
+    >Close
+    </li>
+
+    <li data-ng-click="menuCtrl.openFullScreen()">
+      Link
+    </li>
+  </ul>
+</div>

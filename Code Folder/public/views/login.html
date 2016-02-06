@@ -1,0 +1,38 @@
+<div class="login-wrapper">
+  <div class="heading">Login</div>
+  <form action="" id="login_form">
+    <label for="login-name">Username: </label>
+    <input
+      data-ng-model="name"
+      id="login-name"
+      name="name"
+      placeholder="username"
+      type="text"
+      value="Username"
+    >
+    <br>
+
+    <label for="login-pass">Password: </label>
+    <input
+      data-ng-model="pass"
+      id="login-pass"
+      name="pass"
+      placeholder="password"
+      type="password"
+      value=""
+    >
+    <br>
+
+    <input
+      class="submit-btn"
+      data-ng-click="mainCtrl.submit( $event )"
+      type="submit"
+      value="Login"
+    >
+
+  </form>
+</div>
+
+<div class="black-plane"></div>
+<div class="white-plane"></div>
+<div data-sitefooter></div>

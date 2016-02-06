@@ -1,0 +1,154 @@
+.chart-wrapper {
+  border-radius: 6px;
+  cursor: move;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.gridster-item {
+  border-radius: 12px;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 1s ease-in;
+  &.fade-out {
+    opacity: 0;
+  }
+
+  &.pietotalsales {
+    background-color: $pietotalsales-bg-color;
+  }
+
+  &.bartotalmonth {
+    background-color: $bartotalmonth-bg-color;
+  }
+  &.toporders {
+    background-color: $toporders-bg-color;
+  }
+  &.topsalesmen {
+    background-color: $topsalesmen-bg-color;
+  }
+}
+
+#full-page-chart-wrapper {
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 1s ease-in;
+  width: 100%;
+  &.fadded {
+    opacity: 0;
+  }
+  svg {
+    border-radius: 6px;
+  }
+  .hamburger {
+    left: 15px;
+    position: absolute;
+    top: 10px;
+  }
+  .hamburger-menu {
+    left: 15px;
+    top: 45px;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.highcharts-container {
+  margin: 0 auto;
+}
+
+.hight-chart-drctv{
+  position: relative;
+}
+
+.chart {
+  position: relative;
+  .chart-btn {
+    background-repeat:no-repeat;
+    cursor: pointer;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease-in;
+    width: 27px;
+    z-index: $refresh-btn-z-index;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .hamburger {
+      background-color: $hamburger-btn-color;
+      background-image: url('../images/hamburger-25.png');
+      border-radius: 4px;
+      left: 0;
+  }
+  .hamburger-menu {
+    background-color: $hamburger-menu-color;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.347059);
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 35px;
+    transition: all 0.2s linear;
+    width: auto;
+    z-index: $hambuerger-menu-zindex;
+    &.ng-hide {
+      opacity: 0;
+    }
+    &::before {
+      background-color: $hamburger-menu-color;
+      content: "";
+      display: block;
+      height: 15px;
+      left: 4px;
+      position: absolute;
+      top: -6.5px;
+      transform: rotate(45deg);
+      width: 15px;
+      z-index: $hamburger-arrow-zindex;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      position: relative;
+      z-index: $hambuerger-menu-zindex;
+      li {
+        border-bottom: 1px solid #b7b7b7;
+        cursor: pointer;
+        padding: 13px 20px;
+        position: relative;
+        z-index: $hambuerger-menu-zindex;
+        &:hover {
+          background-color: $hamburger-item-hover;
+        }
+        &:last-of-type {
+          border-bottom: none;
+          &:hover {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+        }
+        &:first-of-type {
+          &:hover {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            z-index: $hambuerger-menu-zindex;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ng-hide-add, .ng-hide-remove,
+.ng-show-add, .ng-show-remove {
+  /* ensure visibility during the transition */
+  display: block !important; /* yes, important */
+}
+

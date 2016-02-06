@@ -1,0 +1,25 @@
+{
+  "name": "SalesManagement",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-mocks": "~1.4.8",
+    "angular-cookies": "~1.4.8",
+    "angular-gridster": "~0.13.5",
+    "d3": "~3.5.10",
+    "angular-google-chart": "~0.1.0",
+    "highcharts-ng": "~0.0.11",
+    "highcharts": "~4.1.9",
+    "angular-animate": "~1.4.8"
+  },
+  "homepage": "",
+  "authors": [
+    "Tomasz Potanski <tomasz@potanski.pl>"
+  ],
+  "description": "Sales Management Web Application",
+  "main": "server.js",
+  "moduleType": [],
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+.home-wrapper {
+  margin-bottom: 80px;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  overflow: hidden;
+
+  &.fadded {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,53 @@
+<div class="support-wrapper">
+  <div class="heading">Support</div>
+
+  <form
+    action=""
+    class="support-form"
+    data-ng-show="!supportCtrl.submitted"
+    method="POST"
+  >
+    <label for="support-subject">Subject: </label>
+    <input
+      data-ng-model="subject"
+      id="support-subject"
+      name="subject"
+      placeholder="subject"
+      type="text"
+      value="male"
+    >
+    <br>
+
+        <textarea
+          class="details"
+          cols="30"
+          data-ng-model="details"
+          name="details"
+          rows="10"
+        >
+
+        </textarea>
+
+    <input
+      class="submit-btn"
+      data-ng-click="supportCtrl.submit( $event )"
+      type="submit"
+      value="Send"
+    >
+  </form>
+
+  <button
+    class="support-close-btn"
+    data-ng-click="supportCtrl.close()"
+    data-ng-show="!supportCtrl.submitted"
+  >Close
+  </button>
+
+  <div
+    class="submitted-msg"
+    data-ng-show="supportCtrl.submitted"
+  >
+    Request is sent successfully
+  </div>
+
+</div>

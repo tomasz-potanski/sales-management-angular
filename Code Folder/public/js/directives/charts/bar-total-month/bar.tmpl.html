@@ -1,0 +1,24 @@
+<div
+  class="bar chart-wrapper"
+>
+  <div
+    class="chart"
+  >
+
+    <div
+      class="hamburger chart-btn bar-btn"
+      data-ng-click="chartCtrl.toggleMenu( $event )"
+    ></div>
+
+    <div data-chartmenu
+         obj="chartCtrl.menuData"
+         isvisible="chartCtrl.isMenuVisible"
+    ></div>
+
+    <highchart
+      id="lastyeardata"
+      class="hight-chart-drctv"
+      config="barChartConfig">
+    </highchart>
+  </div>
+</div>

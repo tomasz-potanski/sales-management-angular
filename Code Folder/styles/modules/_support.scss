@@ -1,0 +1,30 @@
+.support-wrapper {
+  .heading {
+    display: block;
+    font-weight: 700;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .support-form {
+    .details {
+      width: 100%;
+    }
+
+    .submit-btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .support-close-btn {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  .submitted-msg{
+    color: $submitted-msg;
+    font-weight: 600;
+    text-align: center;
+  }
+}

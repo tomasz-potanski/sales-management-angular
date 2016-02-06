@@ -1,0 +1,48 @@
+.login-wrapper {
+  text-align: center;
+  .heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  #login_form {
+    margin: 20px auto;
+    .submit-btn {
+      margin-top: 15px;
+    }
+  }
+}
+
+.black-plane {
+  background-color: $black-plane-color;
+  display: block;
+  height: 105vh;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.35s cubic-bezier(0.65, 0.045, 0.36, 1.000);
+  visibility: hidden;
+  width: 105vw;
+  z-index: $black-plane-zindex;
+  &.revealed {
+    opacity: 0.7;
+    visibility: visible;
+  }
+}
+
+.white-plane {
+  backface-visibility: hidden;
+  background-color: $white-plane-color;
+  display: block;
+  height: 105vh;
+  left: 102vw;
+  perspective: 1000; //sic! necessary for webkit's translate3d
+  position: fixed;
+  top: 0;
+  transition: left 0.7s cubic-bezier(0.65, 0.045, 0.36, 1.000);
+  width: 105vw;
+  z-index: $white-plane-zindex;
+  &.revealed {
+    left: 0;
+  }
+}

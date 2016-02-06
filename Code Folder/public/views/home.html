@@ -1,0 +1,63 @@
+<div
+  class="home-presentation-wrapper"
+  data-ng-show="userLoggedIn"
+>
+
+  <div
+    data-siteheader></div>
+
+  <div class="home-wrapper fadded" gridster>
+    <ul>
+      <li gridster-item
+          class="gridster-item pietotalsales"
+          data-col="5"
+          data-row="0"
+          data-size-x="10"
+          data-size-y="10"
+      >
+        <div pietotalsales
+        ></div>
+      </li>
+
+      <li gridster-item
+          class="gridster-item bartotalmonth"
+          data-col="15"
+          data-row="0"
+          data-size-x="13"
+          data-size-y="10"
+      >
+        <div bartotalmonth></div>
+      </li>
+
+      <li gridster-item
+          class="gridster-item toporders"
+          data-col="5"
+          data-row="10"
+          data-size-x="13"
+          data-size-y="10"
+      >
+        <div toporders></div>
+
+      <li gridster-item
+          class="gridster-item topsalesmen"
+          data-col="18"
+          data-row="10"
+          data-size-x="10"
+          data-size-y="10"
+      >
+        <div topsalesmen></div>
+      </li>
+    </ul>
+
+    <div class="clear"></div>
+  </div>
+
+  <div data-sitefooter></div>
+
+</div>
+
+<div
+  class="spinner-big"
+  data-ng-show="!userLoggedIn"
+>
+</div>

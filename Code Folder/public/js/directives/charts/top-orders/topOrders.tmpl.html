@@ -1,0 +1,20 @@
+<div class="top-orders chart-wrapper">
+  <div class="chart">
+
+    <div
+      class="hamburger chart-btn top-orders-btn"
+      data-ng-click="chartCtrl.toggleMenu( $event )"
+    ></div>
+
+    <div data-chartmenu
+         obj="chartCtrl.menuData"
+         isvisible="chartCtrl.isMenuVisible"
+    ></div>
+
+    <highchart
+      id="salesmandata"
+      class="hight-chart-drctv"
+      config="barTopSalesOrderConfig">
+    </highchart>
+  </div>
+</div>

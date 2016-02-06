@@ -1,0 +1,25 @@
+#footer {
+  bottom: 0;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: $footer-zindex;
+  .container-fluid {
+    ul {
+      color: $footer-font-color;
+      list-style-type: none;
+      padding-left: 0;
+      padding-top: 12.5px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      li {
+        display: inline;
+        padding-right: 13px;
+        a {
+          color: $footer-font-color;
+        }
+      }
+    }
+  }
+}

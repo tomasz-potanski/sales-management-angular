@@ -1,0 +1,13 @@
+.clear { clear: both; }
+
+.spinner-big {
+  background-image: url('../images/spinner.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+  left: calc(50% - 200px);
+  position: absolute;
+  top: calc(50% - 200px);
+  width: 400px;
+}
